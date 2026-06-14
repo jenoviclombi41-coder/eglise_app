@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url('../img.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .login-box {
+    background-color: transparent;
+    border: 2px solid rgba(165, 162, 162, 0.2);
+    padding: 30px;
+    border-radius: 25px;
+    width: 320px; /* largeur réduite */
+    box-shadow: 0 8px 20px rgba(51, 51, 51, 0.3);
+    text-align: center;
+    backdrop-filter: blur(17px);
+  }
+  
+  .login-box h2 {
+    margin: 0 0 5px;
+    font-size: 18px;
+    color: #ffd000;
+  }
+  
+  .login-box h3 {
+    margin: 0 0 20px;
+    font-size: 16px;
+    font-weight: normal;
+    color: #050505;
+  }
+  
+  .login-box input[type="text"],
+  .login-box input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    font-size: 14px; /* plus petit */
+    box-sizing: border-box;
+    background: transparent;
+    color: #fff;
+    padding-right: 40px;
+    outline: none;
+  }
+
+  .login-box input::placeholder {
+    color: white;
+  }
+
+  .remenber-forgot {
+    display: flex;
+    justify-content: space-between; /* sépare les 2 côtés */
+    align-items: center;
+    font-size: 13px; /* réduit la taille */
+    margin-bottom: 18px;
+    color: #fdfafa;
+  }
+  
+  .remenber-forgot a {
+    color: #0066cc;
+    text-decoration: none;
+  }
+
+  .footer-text {
+    color: #ffc400;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 15px;
+    opacity: 0.8; 
+  }
+
+  #notificationConnexion a {
+    color: #ffc400;
+    text-decoration: none;
+  }
+
+  #notificationConnexion a:hover {
+    color: white;
+    text-decoration: underline;
+  }
+ 
+  .options a:hover {
+    text-decoration: underline;
+  }
+  
+  .login-box button {
+    width: 100%;
+    padding: 10px;
+    background: #f3f3f8;
+    color: rgb(12, 11, 11);
+    border: none;
+    border-radius: 25px;
+    font-size: 15px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: 0.5s;
+  }
+  
+  .login-box button:hover {
+    background-color: transparent;
+    border: 2px solid rgba(105, 104, 104, 0.2);
+    color: #fff;
+  }
+
+  .logo {
+    width: 60px;       /* au lieu de 90px, plus petit */
+    height: 60px;      /* même valeur que width pour garder un cercle parfait */
+    object-fit: cover; /* recadre l'image sans la déformer */
+    border-radius: 50%; /* ça rend l'image ronde */
+    display: block;
+    margin: 0 auto 12px auto; /* centre le logo */
+    border: 2px solid #ffc400; /* garde la bordure dorée si tu aimes */
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
