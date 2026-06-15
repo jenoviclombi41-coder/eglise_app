@@ -1,19 +1,35 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-}
-
 body {
     margin: 0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: rgb(15, 15, 15);
-    background-color: red;
-    display : flex;
+    padding: 0;
+    height: 100vh;
+    background-image: url('../img.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    background-image: url('../imag.png');
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
+
+.logo span {
+    font-size: 20px;
+    font-weight: bold;
+    color :#fac003
 }
 
 .container {
@@ -31,7 +47,7 @@ body {
     z-index: 1000;
     justify-content: space-between;
     border-bottom: 1px solid rgb(253, 251, 251);
-    background-color: white;
+    background-color: rgb(10, 10, 10);
 }
 
 .profile-pic {
@@ -49,19 +65,22 @@ body {
 .search-bar {
     flex: 1;
     margin-right: 5px;
+    outline: none;
+    outline-offset: 2px; 
+    
 }
 
 .search-bar input {
     width: 100%;
     padding: 8px;
-    border: 1px solid #ddd;
+    border: 1px solid #faf5f5;
     border-radius: 4px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .menu-button {
     padding: 8px 16px;
-    background-color: rgb(19, 18, 18);
+    background-color: rgb(250, 205, 5);
     color: white;
     border: none;
     border-radius: 4px;
@@ -70,22 +89,13 @@ body {
     font-size: 17px;
 }
 
-.logo {
-    display: none;
-    font-size: 1.5em;
-    font-family: Courier;
-    font-weight: bold;
-    margin-right: 10px;
-    color: rgb(14, 13, 13);
-}
-
 .menu {
     position: fixed;
     top: 0;
     right: 0;
     width: 250px;
     height: 100%;
-    background-color: #fff;
+    background-color: #fac003;
     box-shadow: -2px 0 5px rgba(14, 13, 13, 0.1);
     transform: translateX(100%);
     transition: transform 0.3s ease;
@@ -105,15 +115,24 @@ body {
 
 .menu nav ul li {
     margin: 15px 0;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #f7cb3b;
 }
 
 .content {
     padding: 20px;
     margin-top: 35px;
     position: relative;
-    background-color: white;
+    background-color: rgb(252, 202, 4);
     z-index: 900;
+}
+
+input:focus {
+    outline: 2px solid #f0c872; 
+    outline-offset: 2px;
+}
+
+label {
+    color: hwb(0 95% 5%);
 }
 
 .content h1 {
@@ -136,18 +155,19 @@ body {
 .form-group select,
 .form-group button {
     width: 100%;
+    background-color: #f5dc89;
     padding: 8px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+    border: 1px solid #f3f0e0;
+    border-radius: 9px;
     box-sizing: border-box;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: black;
+    color: rgb(3, 3, 3)
 }
 
 button[type="submit"] {
     padding: 10px 15px;
-    background-color: rgb(12, 11, 11);
-    color: rgb(253, 250, 250);
+    background-color: rgb(5, 5, 5);
+    color: rgb(247, 181, 2);
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -163,7 +183,7 @@ button[type="submit"] {
 .content table td {
     padding: 10px;
     text-align: left;
-    border: 1px solid #ddd;
+    border: 1px solid #f8f3f3;
 }
 
 .add-link {
@@ -190,7 +210,7 @@ button[type="submit"] {
 
 a {
     text-decoration: none;
-    color: rgb(43, 23, 226);
+    color: rgb(246, 246, 248);
 }
 
 .identifiant {
@@ -212,11 +232,7 @@ a {
     .profile-pic {
         margin-left: 20px;
     }
-
-    .logo {
-        display: none;
-    }
-
+    
     .menu .logo {
         display: block;
     }
@@ -243,10 +259,6 @@ a {
 @media (min-width:1024px) {
     .container {
         width: 40%;
-    }
-
-    .logo {
-        display: block;
     }
 
     .search-bar {
