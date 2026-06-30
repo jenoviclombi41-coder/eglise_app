@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=devise-width,initial-scale=1.0">
+    <title>lister formation - eglise</title>
+    <link rel="stylesheet" href="../css/styles2.css">
+    <script src="../js/modifierFormation.js" defer></script>
+    <script src="../js/menu.js" defer></script>
+    <script src="../js/button.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <button class="menu-button" onclick="toggleMenu()"></button>
+            <div class="logo"></div>
+            <div class="search_bar">
+                <input type="text" placeholder="rechercher">
+            </div>
+        </div>
+        <div id="menu" class="menu">
+            <div class="logo">logo</div>
+            <nav>
+                <ul id="menuAdministrateur">
+                    <li><a href="#">chargement</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </div>
+    <div class="content">
+        <h1>Liste des formations</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nom</th>
+                    <th>Durée</th>
+                    <th>Coût</th>
+                </tr>
+            </thead>
+            <tbody id="listeFormations">
+                <!-- Les formations seront affichées ici -->
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
